@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <pluginGroups>
+    <pluginGroup>org.mule.tools</pluginGroup>
+    <pluginGroup>org.sonarsource.scanner.maven</pluginGroup>
+  </pluginGroups>
+  <servers>
+    <server>
+      <id>ExchangeWCU</id>
+      <username>soumesh_mule_training</username>
+      <password>Mama@2022</password>
+    </server>
+	<server>
+      <id>MuleRepository</id>
+      <username>soumesh_mule_training</username>
+      <password>Mama@2022</password>
+    </server>
+  </servers>
+  <mirrors>
+  </mirrors>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <id>ExchangeWCU</id> 
+          <name>Exchange WCU Repository</name> 
+          <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/0aa1dd72-4507-4e5c-8e2c-cf3602cc1f6a/maven</url> 
+          <layout>default</layout> 
+        </repository>
+		<repository>
+          <id>anypoint-exchange-v2</id>
+          <name>Anypoint Exchange</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+          <layout>default</layout>
+        </repository>
+        <repository>
+          <id>mulesoft-public</id>
+          <name>MuleSoft Public Repository</name>
+          <url>https://repository.mulesoft.org/nexus/content/repositories/public/</url>
+          <layout>default</layout>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+        <repository>
+		   <id>splunk</id>
+		   <name>splunk-releases</name>
+		   <url>http://splunk.jfrog.io/splunk/ext-releases-local</url>
+		</repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <id>mulesoft-releases</id>
+          <name>mulesoft release repository</name>
+          <layout>default</layout>
+          <url>http://repository.mulesoft.org/releases/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </pluginRepository>
+        <pluginRepository>
+          <id>mulesoft-public</id>
+          <url>https://repository.mulesoft.org/nexus/content/repositories/public</url>
+        </pluginRepository>
+        <pluginRepository>
+          <id>mule-public</id>
+          <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+	<profile>
+	<id>mulesoft</id>
+	<activation>
+		<activeByDefault>true</activeByDefault>
+	</activation>
+	<repositories>
+		<repository>
+			<id>MuleRepository</id>
+			<name>MuleRepository</name>
+			<url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</profile>
+  </profiles>
+</settings>

@@ -41,6 +41,8 @@
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
+		<anypoint.platform.client_id>d0b14ecee82c4034bad91e734489a3fd</anypoint.platform.client_id>
+		<anypoint.platform.client_secret>c13da185FAB447D2a7643E233fC027aa</anypoint.platform.client_secret>
 	</properties>
 </cloudHubDeployment>
 </configuration>
