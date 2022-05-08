@@ -15,6 +15,11 @@
       <username>soumesh_mule_training</username>
       <password>Mama@2022</password>
     </server>
+    <server>
+      <id>MulesoftExchange</id>
+      <username>soumesh_mule_training</username>
+      <password>Mama@2022</password>
+    </server>
   </servers>
   <mirrors>
   </mirrors>
