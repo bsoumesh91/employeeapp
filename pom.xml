@@ -4,7 +4,7 @@
 
 	<groupId>0aa1dd72-4507-4e5c-8e2c-cf3602cc1f6a</groupId>
 	<artifactId>employeeapp</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>mule-application</packaging>
 
 	<name>employeeapp</name>
